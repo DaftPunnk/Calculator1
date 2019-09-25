@@ -66,7 +66,13 @@ class ViewController: UIViewController {
         {
             if operation == 12
             {
+                if numnberOnScreen == 0 {
+                    label.text = "ERROR"
+                }
+                else
+                {
                 label.text = String(previousNumber / numnberOnScreen)
+                }
             }
             else if operation == 13
             {
